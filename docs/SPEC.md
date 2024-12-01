@@ -142,3 +142,12 @@ Digit = "0"..."9" ;
 ```
 
 - Example: Matches any single digit between `0` and `9`.
+
+### Special Characters
+Some non-printable or special characters (e.g., whitespace, newlines) are represented with descriptive names:
+
+```ebnf
+Newline = "\n" | "\r\n" ;
+```
+
+- Example: Matches a line feed (`\n`) or a carriage return followed by a line feed (`\r\n`).
