@@ -115,3 +115,12 @@ Expression = [ Element ] ;
 ```
 
 - Example: Matches `Element` if present, but it can be omitted.
+
+### Groupings
+Parentheses `( ... )` are used to group expressions and clarify precedence:
+
+```ebnf
+Expression = ( Element1, Element2 ) ;
+```
+
+- Example: Matches `Element1` followed by `Element2` as a single grouped unit.
