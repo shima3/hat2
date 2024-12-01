@@ -73,8 +73,8 @@ Syntax rules are defined with the format:
 RuleName = Expression ;
 ```
 
-- The left-hand side (RuleName) specifies the name of the rule.
-- The right-hand side (Expression) defines its structure.
+- The left-hand side (`RuleName`) specifies the name of the rule.
+- The right-hand side (`Expression`) defines its structure.
 
 ### Concatenation
 
@@ -84,11 +84,11 @@ Elements listed sequentially must appear in the given order:
 Expression = Element1, Element2 ;
 ```
 
-- Example: Element1 is followed by Element2.
+- Example: `Element1` is followed by `Element2`.
 
 ### Alternatives
 
-Multiple options are separated by `|` , indicating that any one of them can match:
+Multiple options are separated by `|`, indicating that any one of them can match:
 
 ```ebnf
 Expression = Option1 | Option2 ;
@@ -117,6 +117,7 @@ Expression = [ Element ] ;
 - Example: Matches `Element` if present, but it can be omitted.
 
 ### Groupings
+
 Parentheses `( ... )` are used to group expressions and clarify precedence:
 
 ```ebnf
@@ -126,15 +127,17 @@ Expression = ( Element1, Element2 ) ;
 - Example: Matches `Element1` followed by `Element2` as a single grouped unit.
 
 ### Terminal Symbols
+
 Strings or characters enclosed in quotation marks represent literal values:
 
 ```ebnf
 Terminal = "literal" ;
 ```
 
-- Example: Matches the exact string "literal".
+- Example: Matches the exact string `"literal"`.
 
 ### Character Ranges
+
 Ranges specify a set of characters using the `...` operator:
 
 ```ebnf
@@ -144,6 +147,7 @@ Digit = "0"..."9" ;
 - Example: Matches any single digit between `0` and `9`.
 
 ### Special Characters
+
 Some non-printable or special characters (e.g., whitespace, newlines) are represented with descriptive names:
 
 ```ebnf
