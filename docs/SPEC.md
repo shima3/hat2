@@ -68,8 +68,8 @@ Below is an explanation of the elements and constructs in this EBNF:
 ### Rule Definition
 
 Syntax rules are defined with the format:
-```ebnf
 
+```ebnf
 RuleName = Expression ;
 ```
 
@@ -81,21 +81,17 @@ RuleName = Expression ;
 Elements listed sequentially must appear in the given order:
 
 ```ebnf
-
 Expression = Element1, Element2 ;
-
 ```
 
 - Example: Element1 is followed by Element2.
 
 ### Alternatives
 
-Multiple options are separated by |, indicating that any one of them can match:
+Multiple options are separated by &#124;, indicating that any one of them can match:
 
 ```ebnf
-
 Expression = Option1 | Option2 ;
-
 ```
 
 - Example: Matches either Option1 or Option2.
