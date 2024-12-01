@@ -1,3 +1,4 @@
 theme: jekyll-theme-time-machine
 timezone: Asia/Tokyo
-title: Hat
+title: Hat programming language
+description: Hat is a simple language for functional programming.
