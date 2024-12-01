@@ -1,5 +1,3 @@
-# Specification of the Hat programming language
-
 ---
 layout: default
 ---
