@@ -88,13 +88,13 @@ Expression = Element1, Element2 ;
 
 ### Alternatives
 
-Multiple options are separated by `|` &#124;, indicating that any one of them can match:
+Multiple options are separated by `|` , indicating that any one of them can match:
 
 ```ebnf
 Expression = Option1 | Option2 ;
 ```
 
-- Example: Matches either Option1 or Option2.
+- Example: Matches either `Option1` or `Option2`.
 
 ### Repetition
 
@@ -105,3 +105,13 @@ Expression = { Element } ;
 ```
 
 - Example: Matches `Element` repeated zero or more times.
+
+### Optional Elements
+
+`[ ... ]` indicates that the enclosed expression is optional (zero or one occurrence):
+
+```ebnf
+Expression = [ Element ] ;
+```
+
+- Example: Matches `Element` if present, but it can be omitted.
