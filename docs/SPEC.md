@@ -1,5 +1,5 @@
 ---
-layout: default
+layout2: default
 ---
 
 # Specification of the Hat programming language
