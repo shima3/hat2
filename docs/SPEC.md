@@ -95,3 +95,13 @@ Expression = Option1 | Option2 ;
 ```
 
 - Example: Matches either Option1 or Option2.
+
+### Repetition
+
+`{ ... }` indicates zero or more repetitions of the enclosed expression:
+
+```ebnf
+Expression = { Element } ;
+```
+
+- Example: Matches `Element` repeated zero or more times.
