@@ -124,3 +124,21 @@ Expression = ( Element1, Element2 ) ;
 ```
 
 - Example: Matches `Element1` followed by `Element2` as a single grouped unit.
+
+### Terminal Symbols
+Strings or characters enclosed in quotation marks represent literal values:
+
+```ebnf
+Terminal = "literal" ;
+```
+
+- Example: Matches the exact string "literal".
+
+### Character Ranges
+Ranges specify a set of characters using the `...` operator:
+
+```ebnf
+Digit = "0"..."9" ;
+```
+
+- Example: Matches any single digit between `0` and `9`.
