@@ -88,7 +88,7 @@ Expression = Element1, Element2 ;
 
 ### Alternatives
 
-Multiple options are separated by &#124;, indicating that any one of them can match:
+Multiple options are separated by `|` &#124;, indicating that any one of them can match:
 
 ```ebnf
 Expression = Option1 | Option2 ;
