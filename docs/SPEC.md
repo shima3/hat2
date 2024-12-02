@@ -26,11 +26,7 @@ StringCharacter = Character | EscapeSequence ;
 Character   = ? any valid character except '"', '\', and Newline ? ;
 EscapeSequence  = "\", ( '"' | "\" | "n" | "t" | "r" ) ;
 
-Digits      = Digit, { Digit } ;
-
-Whitespace  = Space | Tab | Newline ;
-Space       = " " ;
-Tab         = "\t" ;
+Whitespace  = " " | "\t" | Newline ;
 Newline     = "\n" | "\r\n" ;
 
 Comment     = LineComment | BlockComment ;
